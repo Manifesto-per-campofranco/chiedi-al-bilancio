@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Chiedi al bilancio – stato della macchina</title>
+<style>
+  :root{--bg:#0f1729;--panel:#1a2740;--ink:#eef2f8;--soft:#93a1bd;--line:#2a3a56;--giallo:#ffd23f;color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Helvetica Neue','Segoe UI',Arial,sans-serif;line-height:1.5}
+  main{max-width:860px;margin:0 auto;padding:24px 18px 48px}
+  h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:28px;margin:0 0 4px}
+  h2{font-size:15px;margin:26px 0 8px;color:var(--soft)}
+  p{margin:6px 0;color:var(--soft);font-size:14px}
+  #stato{font-size:18px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--giallo);border-radius:10px;padding:14px 16px;margin-top:14px;overflow-wrap:anywhere}
+  pre{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0;font-size:12.5px;line-height:1.45;white-space:pre-wrap;overflow-wrap:anywhere;max-height:60vh;overflow:auto}
+  button,a.b{font:inherit;font-size:14px;font-weight:700;color:#0f1729;background:var(--giallo);border:none;border-radius:10px;padding:9px 14px;cursor:pointer;text-decoration:none;display:inline-block;margin:10px 8px 0 0}
+  button:focus-visible,a.b:focus-visible{outline:2px solid #fff;outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Chiedi al bilancio</h1>
+  <p>Stato della macchina virtuale. Questa pagina si aggiorna da sola ogni 20 secondi.</p>
+  <div id="stato">Carico lo stato…</div>
+  <p id="avanzamento"></p>
+  <a class="b" href="../">Apri la pagina del cittadino</a>
+  <button type="button" id="copia">Copia il rapporto da mandare a Claude</button>
+  <p id="esito" role="status"></p>
+  <h2>Rapporto della prova dei modelli</h2>
+  <pre id="rapporto">Non ancora disponibile: compare alla fine della prova dei modelli.</pre>
+  <h2>Registro dell'installazione (ultime righe)</h2>
+  <pre id="registro"></pre>
+</main>
+<script>
+  const el = (id) => document.getElementById(id);
+  const leggi = (f) => fetch(f + '?t=' + Date.now(), { cache: 'no-store' }).then((r) => (r.ok ? r.text() : ''), () => '');
+  let rapporto = '', registro = '', stato = '';
+  async function aggiorna() {
+    const [s, a, r, g] = await Promise.all([leggi('stato.txt'), leggi('avanzamento.txt'), leggi('rapporto_ia.md'), leggi('installa.txt')]);
+    stato = s.trim(); rapporto = r; registro = g.split('\n').slice(-120).join('\n');
+    el('stato').textContent = stato || 'Stato non disponibile: l\'installazione non è ancora partita.';
+    el('avanzamento').textContent = a.trim() ? 'Prova dei modelli: ' + a.trim() : '';
+    if (r) el('rapporto').textContent = r;
+    el('registro').textContent = registro;
+  }
+  el('copia').addEventListener('click', () => {
+    const testo = 'STATO\n' + stato + '\n\nRAPPORTO\n' + (rapporto || 'non disponibile') + '\n\nREGISTRO (ultime righe)\n' + registro;
+    const fatto = () => { el('esito').textContent = 'Copiato. Incollalo nella conversazione con Claude.'; };
+    const aMano = () => { const s = window.getSelection(), n = document.createRange(); n.selectNodeContents(document.querySelector('main')); s.removeAllRanges(); s.addRange(n); el('esito').textContent = 'Ho selezionato tutto il testo: copialo con Ctrl+C (o Cmd+C) e incollalo nella conversazione con Claude.'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(testo).then(fatto, aMano); else aMano();
+  });
+  aggiorna(); setInterval(aggiorna, 20000);
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#!/bin/bash
+# Chiedi al bilancio: avvio automatico della macchina virtuale.
+# Questo testo va incollato nel riquadro "Initialization script" (o "Cloud-init script") quando si crea la macchina su Oracle Cloud.
+# Prima di incollarlo sostituisci TUO-UTENTE con il nome dell'account GitHub in cui hai caricato i file.
+REPO="TUO-UTENTE/chiedi-al-bilancio"
+export HOME=/root
+mkdir -p /opt/chiedi/src /etc/chiedi
+echo "$REPO" > /etc/chiedi/repo
+for i in 1 2 3 4 5 6; do
+  curl -fsSL "https://github.com/$REPO/archive/refs/heads/main.tar.gz" | tar -xz -C /opt/chiedi/src --strip-components=1 && break
+  sleep 30
+done
+bash /opt/chiedi/src/chatbot/ia/installa.sh > /var/log/chiedi-avvio.log 2>&1

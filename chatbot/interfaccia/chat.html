@@ -1,0 +1,18 @@
+<main class="pagina vuota" id="pagina">
+  <header class="testa">
+    <h1>Chiedi al bilancio</h1>
+    <p class="invito">Scrivi la tua domanda sui conti del Comune di Campofranco.</p>
+    <p class="invito esempio">Per esempio: quanto si spende per i rifiuti?</p>
+  </header>
+  <div class="thread" id="cbThread" role="log" aria-live="polite"></div>
+  <form class="composer" id="cbForm" autocomplete="off">
+    <label class="sr" for="cbInput">La tua domanda</label>
+    <div class="riga">
+      <input id="cbInput" type="text" maxlength="200" enterkeyhint="send" placeholder="Scrivi qui la tua domanda" disabled>
+      <button type="submit" id="cbInvia" aria-label="Invia la domanda" disabled>
+        <svg width="22" height="22" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 4.5 16.5 10 11 15.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <p class="nota">Risposte automatiche sui dati ufficiali BDAP e SIOPE. Strumento indipendente, non è un servizio del Comune.</p>
+  </form>
+</main>

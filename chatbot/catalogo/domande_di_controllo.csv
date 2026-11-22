@@ -1,0 +1,56 @@
+id;domanda;intento;voce;voce2;misura;anno;anno2;per_abitante;mese;termine;ricerca;dopo;risposta_attesa;origine
+M001;quanto abbiamo speso per la spazzatura nel 2023;valore;rifiuti;;base;2023;;;;;;;dato;controllo
+M002;costo dei dipendenti nel 2019;valore;personale;;base;2019;;;;;;;dato;controllo
+M003;quanto va alla cultura?;valore;cultura;;base;;;;;;;;dato;controllo
+M004;soldi per lo sport;valore;sport;;base;;;;;;;;dato;controllo
+M005;spesa per la protezione civile 2022;valore;protezione_civile;;base;2022;;;;;;;dato;controllo
+M006;quanto costa il segretario comunale;valore;segreteria;;base;;;;;;;;dato_contenuto;controllo
+M007;quanto spendiamo per la scuola materna nel 2024;valore;scuola_infanzia;;base;2024;;;;;;;dato;controllo
+M008;quanto è stato speso per il verde pubblico;valore;verde_ambiente;;base;;;;;;;;dato_contenuto;controllo
+M009;le bollette del comune quanto costano;valore;beni_servizi;;base;;;;;;;;dato_contenuto;controllo
+M010;quanto si spende per gli impianti sportivi?;valore;sport;;base;;;;;;;;dato_contenuto;controllo
+M011;quanto vale l'imu del 2020;valore;imu;;base;2020;;;;;;;dato;controllo
+M012;quanto incassa il comune dalla tari;valore;tari;;base;;;;;;;;dato;controllo
+M013;entrate dalle multe nel 2022;valore;multe;;base;2022;;;;;;;dato;controllo
+M014;quanto arriva dalla regione;valore;regione;;base;;;;;;;;dato;controllo
+M015;quanti soldi dà lo stato al comune;valore;stato;;base;;;;;;;;dato;controllo
+M016;addizionale irpef 2023 quanto vale;valore;irpef;;base;2023;;;;;;;dato;controllo
+M017;quanto ha incassato il comune nel 2022;valore;entrate_totali;;base;2022;;;;;;;dato;controllo
+M018;quanto rende l'occupazione del suolo pubblico;valore;suolo_pubblico;;base;;;;;;;;dato;controllo
+M019;la spesa per i rifiuti è cresciuta?;andamento;rifiuti;;base;;;;;;;;dato;controllo
+M020;come vanno le entrate tributarie negli anni;andamento;entrate_tributarie;;base;;;;;;;;dato;controllo
+M021;differenza tra la spesa del personale del 2019 e quella del 2024;confronto;personale;;base;2019;2024;;;;;;dato;controllo
+M022;le multe sono aumentate dal 2021?;andamento;multe;;base;2021;;;;;;;dato;controllo
+M023;storico della cassa;andamento;cassa;;base;;;;;;;;dato;controllo
+M024;tari negli ultimi tre anni;andamento;tari;;base;2022;2024;;;;;;dato;controllo
+M025;quanto costa il personale per abitante;valore;personale;;base;;;si;;;;;dato;controllo
+M026;imu pro capite 2022;valore;imu;;base;2022;;si;;;;;dato;controllo
+M027;quanto si incassa di multe a testa;valore;multe;;base;;;si;;;;;dato;controllo
+M028;quanta tari resta da incassare;riscossione;tari;;residui;;;;;;;;dato;controllo
+M029;percentuale di riscossione dell'imu nel 2022;riscossione;imu;;percentuale;2022;;;;;;;dato;controllo
+M030;quanto non è stato incassato delle multe nel 2023;riscossione;multe;;non_riscosso;2023;;;;;;;dato;controllo
+M031;in che mese si incassa di più;mesi;entrate_totali;;;;;;;;;;dato;controllo
+M032;quanto ha pagato il comune a marzo 2024;mesi;spese_totali;;;2024;;;3;;;;dato;controllo
+M033;quando arriva l'addizionale irpef;mesi;irpef;;;;;;;;;;dato;controllo
+M034;quanto c'è in cassa;valore;cassa;;base;;;;;;;;dato;controllo
+M035;quanto è il risultato di amministrazione;valore;risultato;;base;;;;;;;;dato;controllo
+M036;a quanto ammontano i residui attivi nel 2023;valore;crediti;;base;2023;;;;;;;dato;controllo
+M037;da dove vengono i soldi del comune;classifica;entrate_per_fonte;;;;;;;;;;dato;controllo
+M038;quanto pesa la spesa per il personale;valore;personale;;quota;;;;;;;;dato;controllo
+M039;cosa vuol dire residui attivi;definizione;;;;;;;;residuo_attivo;;;definizione;controllo
+M040;che cos'è la parte accantonata;definizione;;;;;;;;parte_accantonata;;;definizione;controllo
+M041;cosa significa fondo di solidarietà;definizione;;;;;;;;fondo_solidarieta;;;definizione;controllo
+M042;il comune butta i soldi?;giudizio;;;;;;;;;;;neutra;controllo
+M043;l'amministrazione sta facendo un buon lavoro?;giudizio;;;;;;;;;;;neutra;controllo
+M044;è colpa del sindaco se ci sono i debiti?;giudizio;debiti;;;;;;;;;;neutra;controllo
+M045;sei una persona vera?;aiuto;;;;;;;;chi_sei;;;servizio;controllo
+M046;i dati da dove arrivano;aiuto;;;;;;;;fonti;;;servizio;controllo
+M047;quanto guadagnano i dipendenti comunali;fuori_ambito;personale;;;;;;;persone;;;limite;controllo
+M048;quando devo pagare la tari;fuori_ambito;;;;;;;;pratiche;;;limite;controllo
+M049;le tasse aumenteranno?;fuori_ambito;;;;;;;;previsioni;;;limite;controllo
+M050;quanto spende il comune di mussomeli;fuori_ambito;;;;;;;;altri_comuni;;;limite;controllo
+M051;perché si spende tanto per i rifiuti?;fuori_ambito;rifiuti;;;;;;;cause;;;limite;controllo
+M052;quanto si è speso nel 2014 per la scuola;fuori_ambito;scuola;;;;;;;anno_fuori_periodo;;;limite;controllo
+M053;e nel 2019?;valore;imu;;base;2019;;;;;;M011;dato;controllo
+M054;e quanto è stato incassato davvero?;valore;tari;;cassa;;;;;;;M012;dato;controllo
+M055;com'è cambiata negli anni?;andamento;cultura;;base;;;;;;;M003;dato;controllo

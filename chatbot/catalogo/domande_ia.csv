@@ -1,0 +1,75 @@
+id;domanda;intento;voce;voce2;misura;anno;anno2;per_abitante;mese;termine;ricerca;dopo;risposta_attesa;origine
+A001;quanto ci costa ogni anno tenere pulito il paese;valore;rifiuti;;base;;;;;;;;dato;ia
+A002;qunato spende il comune per la scuola;valore;scuola;;base;;;;;;;;dato;ia
+A003;quanti soldi se ne vanno per pagare chi lavora in comune;valore;personale;;base;;;;;;;;dato;ia
+A004;il comune quanto mette per i vecchietti;valore;anziani;;base;;;;;;;;dato;ia
+A005;spesa 2022 per l'aiuto ai diversamente abili;valore;disabili;;base;2022;;;;;;;dato;ia
+A006;quanto si spende per le guardie municipali;valore;polizia_locale;;base;;;;;;;;dato;ia
+A007;investimneti 2023;valore;investimenti;;base;2023;;;;;;;dato;ia
+A008;quanto si spende per i bambini dell'asilo;valore;scuola_infanzia;;base;;;;;;;;dato;ia
+A009;quanto abbiamo speso per libri e biblioteca;valore;cultura;;base;;;;;;;;dato_contenuto;ia
+A010;quanto costa al comune dare da mangiare ai bambini a scuola;valore;servizi_scolastici;;base;;;;;;;;dato;ia
+A011;quanto incassa il comune dalla tassa sugli immobili;valore;imu;;base;;;;;;;;dato;ia
+A012;quanto entra con la tassa della spazzatura;valore;tari;;base;;;;;;;;dato;ia
+A013;quanto ha fruttato l'imposta sulle seconde case nel 2022;valore;imu;;base;2022;;;;;;;dato;ia
+A014;quanto rende al comune la tassa per occupare strade e piazze con tavolini e bancarelle;valore;suolo_pubblico;;base;;;;;;;;dato;ia
+A015;quanti soldi ci gira roma;valore;stato;;base;;;;;;;;dato;ia
+A016;quanto tira su il comune con le multe agli automobilisti nel 2024;valore;multe;;base;2024;;;;;;;dato;ia
+A017;quanti soldi entrano dai costruttori per i permessi edilizi;valore;permessi_costruire;;base;;;;;;;;dato;ia
+A018;quanto incassa il comune facendo pagare i servizi ai cittadini;valore;vendita_servizi;;base;;;;;;;;dato;ia
+A019;la spesa per gli stipendi sale o scende?;andamento;personale;;base;;;;;;;;dato;ia
+A020;negli ultimi tempi paghiamo più tari?;andamento;tari;;base;;;;;;;;dato;ia
+A021;come si è mossa col passare degli anni la spesa per i servizi sociali;andamento;sociale;;base;;;;;;;;dato;ia
+A022;le multe sono raddoppiate?;andamento;multe;;base;;;;;;;;dato;ia
+A023;confronto 2019 2024 spesa polizia locale;confronto;polizia_locale;;base;2019;2024;;;;;;dato;ia
+A024;quanto è cresciuto il costo dei rifiuti dal 2018;andamento;rifiuti;;base;2018;;;;;;;dato;ia
+A025;la popolazione di campofranco cala?;andamento;popolazione;;base;;;;;;;;dato;ia
+A026;i soldi in cassa sono di più o di meno rispetto al 2020?;confronto;cassa;;base;2020;;;;;;;dato;ia
+A027;lo stato ci manda meno soldi rispetto al passato?;andamento;stato;;base;;;;;;;;dato;ia
+A028;quanto ci costa a ognuno di noi la spazzatura;valore;rifiuti;;base;;;si;;;;;dato;ia
+A029;quanto spende il comune per ciascun residente;valore;spese_totali;;base;;;si;;;;;dato;ia
+A030;in media quanto versa di imu ogni campofranchese;valore;imu;;base;;;si;;;;;dato;ia
+A031;quanta parte dell'imu resta non pagata;riscossione;imu;;non_riscosso;;;;;;;;dato;ia
+A032;il comune riesce a farsi pagare la tari?;riscossione;tari;;percentuale;;;;;;;;dato;ia
+A033;quanta tari del 2023 non è stata versata;riscossione;tari;;non_riscosso;2023;;;;;;;dato;ia
+A034;su 100 euro di multe quanti ne incassa davvero il comune;riscossione;multe;;percentuale;;;;;;;;dato;ia
+A035;in che periodo dell'anno arrivano i soldi dell'imu;mesi;imu;;;;;;;;;;dato;ia
+A036;quanto aveva il comune sul conto alla fine del 2022;valore;cassa;;base;2022;;;;;;;dato;ia
+A037;il comune va in rosso con la banca?;valore;anticipazioni;;base;;;;;;;;dato;ia
+A038;in quale parte dell'anno il comune paga di più;mesi;spese_totali;;;;;;;;;;dato;ia
+A039;quanto è entrato nelle casse a marzo del 2025;mesi;entrate_totali;;;2025;;;3;;;;dato;ia
+A040;quanto deve avere ancora il comune da cittadini e altri enti;valore;crediti;;base;;;;;;;;dato;ia
+A041;quanti soldi deve ancora dare il comune a chi ha lavorato per lui;valore;debiti_da_pagare;;base;;;;;;;;dato;ia
+A042;qual è la voce di spesa più pesante;classifica;spese_per_finalita;;;;;;;;;;dato;ia
+A043;qual è l'entrata più piccola del comune;classifica;entrate_singole;;;;;;;minore;;;dato;ia
+A044;quanto pesa la scuola su tutte le spese;valore;scuola;;quota;;;;;;;;dato;ia
+A045;com'è la situazione dei conti del comune in poche parole;valore;quadro_conti;;base;;;;;;;;dato;ia
+A046;quanto incassa il comune di imu nel 2023;valore;imu;;base;2023;;;;;;;dato;ia
+A047;e di tari?;valore;tari;;base;2023;;;;;;A046;dato;ia
+A048;e in rapporto agli abitanti?;valore;imu;;base;2023;;si;;;;A046;dato;ia
+A049;e andando indietro negli anni?;andamento;imu;;base;;;;;;;A046;dato;ia
+A050;cosa sarebbe il fondo crediti di dubbia esigibilità;definizione;;;;;;;;fcde;;;definizione;ia
+A051;non capisco cosa vuol dire accertato;definizione;;;;;;;;accertato;;;definizione;ia
+A052;che vuol dire che il comune è in disavanzo;definizione;;;;;;;;disavanzo;;;definizione;ia
+A053;cosa si intende quando si parla di partite di giro;definizione;;;;;;;;partite_di_giro;;;definizione;ia
+A054;cosa hanno scritto i revisori sui crediti vecchi;documento;;;;;;;;;crediti;;documento;ia
+A055;nella relazione c'è qualcosa sui debiti fuori bilancio?;documento;;;;;;;;;debiti fuori bilancio;;documento;ia
+A056;secondo voi il comune è amministrato come si deve?;giudizio;;;;;;;;;;;neutra;ia
+A057;i soldi per il sociale sono buttati?;giudizio;sociale;;;;;;;;;;neutra;ia
+A058;il sindaco di adesso è meglio di quello di prima?;giudizio;;;;;;;;;;;neutra;ia
+A059;non vi sembra esagerato quello che si spende per i politici?;giudizio;;;;;;;;;;;neutra;ia
+A060;ma tu chi saresti?;aiuto;;;;;;;;chi_sei;;;servizio;ia
+A061;da quale fonte vengono questi numeri;aiuto;;;;;;;;fonti;;;servizio;ia
+A062;le cose che scrivo qui vengono salvate da qualche parte?;aiuto;;;;;;;;privacy;;;servizio;ia
+A063;a quando sono aggiornati i conti che mi fai vedere;aiuto;;;;;;;;aggiornamento;;;servizio;ia
+A064;come devo fare per usarti;aiuto;;;;;;;;cosa_fai;;;servizio;ia
+A065;dove vado a pagare la tassa sui rifiuti;fuori_ambito;;;;;;;;pratiche;;;limite;ia
+A066;a san giovanni gemini le tasse sono più basse?;fuori_ambito;;;;;;;;altri_comuni;;;limite;ia
+A067;quanto è costato rifare il tetto della palestra;fuori_ambito;sport;;;;;;;dettaglio;;;limite;ia
+A068;mi dici il nome di chi non ha pagato l'imu;fuori_ambito;imu;;;;;;;persone;;;limite;ia
+A069;che squadra ha vinto ieri;fuori_ambito;;;;;;;;altro;;;limite;ia
+A070;quanto si spendeva per il personale nel 2005;fuori_ambito;personale;;;;;;;anno_fuori_periodo;;;limite;ia
+A071;qual è il motivo per cui la tari è salita;fuori_ambito;tari;;;;;;;cause;;;limite;ia
+A072;quante persone lavorano in municipio;fuori_ambito;personale;;;;;;;non_nei_dati;;;limite;ia
+A073;quanto incasserà il comune di imu fra due anni;fuori_ambito;;;;;;;;previsioni;;;limite;ia
+A074;la raccolta dei rifiuti funziona malissimo, perché?;fuori_ambito;;;;;;;;servizi;;;limite;ia
